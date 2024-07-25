@@ -10,7 +10,7 @@ model=pickle.load(open('estimator_pl.pkl','rb'))
 st.image(r'innomatics_logo.png')
 st.title("Cancer Prediction")
 
-Age = st.numbertext_input('Enter The Tumor Grade:')
+Age = st.number_input('Enter The Tumor Grade:')
 Symptoms_Severity=st.text_input('Enter The Tumor Symptoms Severity:')
 Family_History = st.text_input('Enter The Family History:')
 Smoking_History= st.text_input('Enter The Smoking History:')
