@@ -7,6 +7,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.neighbors import KNeighborsClassifier
 import pickle
 model=pickle.load(open('estimator_pl.pkl','rb'))
+st.image(r'innomatics_logo.png')
 st.title("Cancer Prediction")
 
 Age = st.number_input("Enter The Age:")
