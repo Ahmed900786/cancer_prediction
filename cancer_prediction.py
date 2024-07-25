@@ -9,10 +9,7 @@ import pickle
 model=pickle.load(open('estimator_pl.pkl','rb'))
 st.title("Cancer Prediction")
 
-Age = st.number_input("Enter The Age:")
-Gender =st.text_input('Enter The Gender:')
-Tumor_Size=st.number_input('Enter The Tumor Size:')
-Tumor_Grade=st.text_input('Enter The Tumor Grade:')
+Age = st.numbertext_input('Enter The Tumor Grade:')
 Symptoms_Severity=st.text_input('Enter The Tumor Symptoms Severity:')
 Family_History = st.text_input('Enter The Family History:')
 Smoking_History= st.text_input('Enter The Smoking History:')
