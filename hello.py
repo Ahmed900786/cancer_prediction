@@ -23,7 +23,7 @@ Exercise_Frequency = st.selectbox('Exercise Frequency',['Regularly', 'Rarely', '
 if st.button("Submit"):
     prediction=model.predict([[Age,Gender,Tumor_Size,Tumor_Grade,Symptoms_Severity,Family_History,Smoking_History,Alcohol_Consumption,Exercise_Frequency]])[0]
     if prediction==0:
-        st.write('Cancer is not there')
+        st.write('Cancer Is Not There')
     else:
-        st.write('Cancer is there')
+        st.write('Cancer Is There')
 
