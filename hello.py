@@ -24,6 +24,6 @@ if st.button("Submit"):
     prediction=model.predict([[Age,Gender,Tumor_Size,Tumor_Grade,Symptoms_Severity,Family_History,Smoking_History,Alcohol_Consumption,Exercise_Frequency]])[0]
     if prediction==0:
         st.write('Cancer Is Not There')
-    else:
+    elif prediction==1:
         st.write('Cancer Is There')
 
