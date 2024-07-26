@@ -11,7 +11,7 @@ st.image(r"innomatics_logo.png")
 st.title("Cancer Prediction")
 
 Age = st.number_input("Enter The Age:")
-Gender =st.selectbox('Gender','Male','Female')
+Gender =st.selectbox('Gender','Male', 'Female')
 Tumor_Size=st.number_input('Enter The Tumor Size:')
 Tumor_Grade=st.selectbox('Tumor Grade','High','Low','Medium')
 Symptoms_Severity=st.selectbox('Symptoms Severity','Mild', 'Moderate', 'Severe')
